@@ -27,10 +27,15 @@ FetchContent_Declare(
         GIT_REPOSITORY https://github.com/recastnavigation/recastnavigation.git
         GIT_TAG main
 )
-FetchContent_MakeAvailable(SDL flecs recastNavigation)
+FetchContent_Declare(
+        DirectXMath
+        GIT_REPOSITORY https://github.com/microsoft/DirectXMath.git
+        GIT_TAG main
+)
+FetchContent_MakeAvailable(SDL flecs recastNavigation DirectXMath)
 
 IF (NOT WIN32)
-    include_directories(Source/Platform/sal/sal.h)
+    include_directories(Source/Platform/sal/)
 ENDIF()
 
 add_executable(${PROJECT_NAME} Source/main.cpp
@@ -46,9 +51,10 @@ add_executable(${PROJECT_NAME} Source/main.cpp
         Source/Renderer/Renderer.h
         Source/ECS/Transform.h
         Source/ECS/Rendering/StaticMesh.h
+        Source/Platform/sal/sal.h
 )
 
 include_directories(Source/Precompiled)
-target_link_libraries(${PROJECT_NAME} PRIVATE SDL3::SDL3-static flecs::flecs_static Detour)
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL3::SDL3-static flecs::flecs_static Detour DirectXMath)
 
 

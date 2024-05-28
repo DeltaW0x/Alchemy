@@ -9,6 +9,8 @@
 #include <windows.h>
 #undef min
 #undef max
+#else
+#include <csignal>
 #endif
 
 #ifdef _DEBUG
@@ -16,27 +18,13 @@ constexpr bool g_bDebug = true;
 #else
 constexpr bool g_bDebug = false;
 #endif
+#include <stdint.h>
+#include <stdio.h>
 #include <flecs.h>
 #include <ostream>
 #include <iostream>
 #include <SDL3/SDL.h>
 #include "../Miscellaneous/Types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #include <DirectXMath.h> // THIS SHOULD ALWAYS BE INCLUDED LAST
 #endif //STDAFX_H

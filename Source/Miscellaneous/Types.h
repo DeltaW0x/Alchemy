@@ -4,8 +4,7 @@
 
 #ifndef TYPES_H
 #define TYPES_H
-#include <stdint.h>
-#include <stdio.h>
+#include <stdafx.h>
 
 #define   u8 uint8_t
 #define  u16 uint16_t
@@ -17,6 +16,16 @@
 #define  s32 int32_t
 #define  s64 int64_t
 
+#ifdef WIN32
+#define DBG_BREAK() __debugbreak()
+#else
+#define DBG_BREAK() raise(SIGTRAP)
+#endif
 
-#define AL_ASSERT(cond,message,...) if (!(cond)) { printf(message,__VA_ARGS__); __debugbreak();}
+#define AL_ASSERT(cond,message,...)  \
+if (!(cond)) { \
+    printf(message,__VA_ARGS__); \
+    DBG_BREAK(); \
+} \
+
 #endif //TYPES_H
