@@ -16,12 +16,10 @@ FetchContent_Declare(
         GIT_REPOSITORY https://github.com/thatcosmonaut/SDL
         GIT_TAG gpu
 )
-
 FetchContent_Declare(
         flecs
         GIT_REPOSITORY https://github.com/SanderMertens/flecs.git
 )
-
 FetchContent_Declare(
         recastNavigation
         GIT_REPOSITORY https://github.com/recastnavigation/recastnavigation.git
@@ -38,7 +36,7 @@ IF (NOT WIN32)
     include_directories(Source/Platform/sal/)
 ENDIF()
 
-add_executable(${PROJECT_NAME} Source/main.cpp
+add_library(${PROJECT_NAME}
         Source/Math/Float2.h
         Source/Math/Float3.h
         Source/Precompiled/stdafx.h
@@ -52,6 +50,7 @@ add_executable(${PROJECT_NAME} Source/main.cpp
         Source/ECS/Transform.h
         Source/ECS/Rendering/StaticMesh.h
         Source/Platform/sal/sal.h
+        Source/Alchemy.h
 )
 
 include_directories(Source/Precompiled)
