@@ -5,7 +5,8 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include <stdafx.h>
+#include <SDL3/SDL.h>
+#include "../Miscellaneous/Types.h"
 
 namespace alchemy {
     class Window {

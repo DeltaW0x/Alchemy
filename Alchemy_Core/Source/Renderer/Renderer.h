@@ -4,8 +4,9 @@
 
 #ifndef RENDERER_H
 #define RENDERER_H
-#include <stdafx.h>
-
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_gpu.h>
+#include "../Miscellaneous/Types.h"
 namespace alchemy {
     class Renderer {
     public:

@@ -4,7 +4,15 @@
 
 #ifndef TYPES_H
 #define TYPES_H
-#include <stdafx.h>
+
+#ifdef _DEBUG
+constexpr bool g_bDebug = true;
+#else
+constexpr bool g_bDebug = false;
+#endif
+
+#include <cstdio>
+#include <cstdint>
 
 #define   u8 uint8_t
 #define  u16 uint16_t
