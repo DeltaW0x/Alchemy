@@ -27,7 +27,7 @@ constexpr bool g_bDebug = false;
 #ifdef WIN32
 #define DBG_BREAK() __debugbreak()
 #else
-#define DBG_BREAK() raise(SIGTRAP)
+#define DBG_BREAK()
 #endif
 
 #define AL_ASSERT(cond,message,...)  \

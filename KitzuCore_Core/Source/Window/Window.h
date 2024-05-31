@@ -8,7 +8,7 @@
 #include <SDL3/SDL.h>
 #include "../Miscellaneous/Types.h"
 
-namespace alchemy {
+namespace kc {
     class Window {
     public:
         Window(){}

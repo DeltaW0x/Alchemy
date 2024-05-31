@@ -3,8 +3,8 @@
 //
 
 #include "Window.h"
-
-namespace alchemy {
+#include <Jolt/Jolt.h>
+namespace kc {
     Window::Window(const char *title, uint32_t with, uint32_t height,u32 flags) : m_title(title), m_width(with),
                                                                         m_height(height) {
         m_pWindow = SDL_CreateWindow(m_title, m_width, m_height, flags);

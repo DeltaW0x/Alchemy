@@ -1,0 +1,48 @@
+SET(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
+include(FetchContent)
+
+SET(SDL_STATIC ON)
+SET(GENERATE_DEBUG_SYMBOLS OFF)
+SET(CROSS_PLATFORM_DETERMINISTIC OFF)
+SET(INTERPROCEDURAL_OPTIMIZATION ON)
+SET(FLOATING_POINT_EXCEPTIONS_ENABLED OFF)
+SET(OBJECT_LAYER_BITS 16)
+SET(USE_SSE4_1 ON)
+SET(USE_SSE4_2 ON)
+SET(USE_AVX ON)
+SET(USE_AVX2 ON)
+SET(USE_AVX512 OFF)
+SET(USE_LZCNT ON)
+SET(USE_TZCNT ON)
+SET(USE_F16C ON)
+SET(USE_FMADD ON)
+SET(DOUBLE_PRECISION OFF)
+SET(RECASTNAVIGATION_DEMO OFF)
+SET(RECASTNAVIGATION_TESTS OFF)
+SET(RECASTNAVIGATION_EXAMPLES OFF)
+SET(RECASTNAVIGATION_DT_POLYREF64 OFF)
+SET(RECASTNAVIGATION_DT_VIRTUAL_QUERYFILTER OFF)
+
+FetchContent_Declare(
+        JoltPhysics
+        GIT_REPOSITORY "https://github.com/jrouwe/JoltPhysics"
+        GIT_TAG "v5.0.0"
+        SOURCE_SUBDIR "Build"
+)
+FetchContent_Declare(
+        SDL
+        GIT_REPOSITORY https://github.com/thatcosmonaut/SDL
+        GIT_TAG gpu
+)
+FetchContent_Declare(
+        flecs
+        GIT_REPOSITORY https://github.com/SanderMertens/flecs.git
+)
+FetchContent_Declare(
+        recastNavigation
+        GIT_REPOSITORY https://github.com/recastnavigation/recastnavigation.git
+        GIT_TAG main
+)
+
+FetchContent_MakeAvailable(SDL flecs recastNavigation JoltPhysics)
+

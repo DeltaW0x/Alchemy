@@ -3,26 +3,15 @@
 //
 
 #include "Renderer.h"
-#include "backends/imgui_impl_sdlgpu.h"
-namespace alchemy {
 
-    Renderer::Renderer(SDL_Window *window, SDL_GpuBackend backend) : m_pWindow(window), m_choosenBackend(backend) {
+namespace kc {
+    Renderer::Renderer(SDL_Window *window, SDL_GpuBackendBits backend, SDL_GpuSwapchainComposition composition,
+                       SDL_GpuPresentMode presentmode) : m_pWindow(window) {
         m_pDevice = SDL_GpuCreateDevice(backend, g_bDebug);
-        SDL_GpuClaimWindow(m_pDevice,m_pWindow, SDL_GPU_COLORSPACE_NONLINEAR_SRGB,SDL_GPU_PRESENTMODE_VSYNC);
-/*
-        ImGui_ImplSDLGpu_InitInfo info;
-        info.Device = m_pDevice;
-        info.Window = m_pWindow;
-        info.RenderPass = m_pMainRenderPass;
-        info.MSAASamples = SDL_GPU_SAMPLECOUNT_1;
-        info.DebugCallback = nullptr;
-
-
-        ImGui_ImplSDLGpu_Init(&info);
-*/
+        SDL_GpuClaimWindow(m_pDevice, m_pWindow, composition, presentmode);
     }
 
-    void Renderer::Draw(SDL_GpuColor clearColor) {
+    void Renderer::StartDraw(SDL_GpuColor clearColor) {
         u32 width, height;
 
         m_pMainCommandBuffer = SDL_GpuAcquireCommandBuffer(m_pDevice);
@@ -46,7 +35,11 @@ namespace alchemy {
             colorAttachmentInfo.storeOp = SDL_GPU_STOREOP_STORE;
 
             m_pMainRenderPass = SDL_GpuBeginRenderPass(m_pMainCommandBuffer, &colorAttachmentInfo, 1, NULL);
+        }
+    }
 
+    void Renderer::EndDraw() {
+        if (m_pBackbufferTexture != nullptr) {
             SDL_GpuEndRenderPass(m_pMainRenderPass);
         }
         SDL_GpuSubmit(m_pMainCommandBuffer);
@@ -54,7 +47,7 @@ namespace alchemy {
 
     void Renderer::Clean() {
         SDL_GpuWait(m_pDevice);
-        SDL_GpuUnclaimWindow(m_pDevice,m_pWindow);
+        SDL_GpuUnclaimWindow(m_pDevice, m_pWindow);
         SDL_GpuDestroyDevice(m_pDevice);
     }
 }

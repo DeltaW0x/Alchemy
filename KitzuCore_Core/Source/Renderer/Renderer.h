@@ -5,17 +5,29 @@
 #ifndef RENDERER_H
 #define RENDERER_H
 #include <SDL3/SDL.h>
-#include <SDL3/SDL_gpu.h>
 #include "../Miscellaneous/Types.h"
-namespace alchemy {
+
+namespace kc {
     class Renderer {
     public:
-        Renderer(){}
-        Renderer(SDL_Window *window, SDL_GpuBackend backend);
+        Renderer() {
+        }
 
-        void Draw(SDL_GpuColor clearColor);
+        Renderer(SDL_Window *window, SDL_GpuBackendBits backend, SDL_GpuSwapchainComposition composition,
+                 SDL_GpuPresentMode presentmode);
+
+        void StartDraw(SDL_GpuColor clearColor);
+
+        void EndDraw();
+
         void Clean();
 
+        SDL_GpuDevice* GetDevice() {
+            return m_pDevice;
+        }
+        SDL_GpuRenderPass* GetMainRenderPass() {
+            return m_pMainRenderPass;
+        }
     private:
         SDL_GpuDevice *m_pDevice = nullptr;
         SDL_Window *m_pWindow = nullptr;
