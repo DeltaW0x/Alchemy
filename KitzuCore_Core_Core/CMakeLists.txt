@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.28)
 include(FetchContent)
 set(CMAKE_CXX_STANDARD 17)
-project(Alchemy_Core)
+project(KitzuCore_Core_Core)
 
 set(CMAKE_CXX_STANDARD 17)
 set(SDL_STATIC ON)

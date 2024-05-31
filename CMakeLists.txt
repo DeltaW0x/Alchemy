@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(Alchemy_Engine)
+project(KitzuCore)
 
-add_subdirectory(Alchemy_Core)
-add_subdirectory(Alchemy_Editor)
+add_subdirectory(KitzuCore_Core)
+add_subdirectory(KitzuCore_Editor)
