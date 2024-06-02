@@ -1,0 +1,52 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"build/_deps/recastnavigation-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "Detour::@52b53aa13f9db4b016e7"
+		},
+		{
+			"id" : "DetourTileCache::@f7c39a60d315b608e631"
+		},
+		{
+			"id" : "DebugUtils::@9cc7f35cc43993f1f38a"
+		},
+		{
+			"id" : "DetourCrowd::@558b0813d000e1399832"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Recast::@b83cefb9b778c867d075"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "CMakePredefinedTargets"
+	},
+	"id" : "ALL_BUILD::@4014c3daa416a7f47b96",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "_deps/recastnavigation-build",
+		"source" : "build/_deps/recastnavigation-src"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

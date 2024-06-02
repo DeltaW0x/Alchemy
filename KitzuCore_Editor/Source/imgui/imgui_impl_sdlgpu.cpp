@@ -103,13 +103,13 @@ void ImGui_ImplSDLGpu_RenderDrawData(ImDrawData *draw_data, SDL_GpuRenderPass *r
         }
 
         if (bd->VertexBuffer != NULL || bd->VertexBufferSize < vertexBufferSize) {
-            SDL_GpuQueueDestroyGpuBuffer(v->Device, bd->VertexBuffer);
+            SDL_GpuReleaseGpuBuffer(v->Device, bd->VertexBuffer);
             SDL_GpuWait(v->Device);
             bd->VertexBuffer = SDL_GpuCreateGpuBuffer(v->Device, SDL_GPU_BUFFERUSAGE_VERTEX_BIT, vertexBufferSize);
             bd->VertexBufferSize = vertexBufferSize;
         }
         if (bd->IndexBuffer != NULL || bd->IndexBufferSize < indexBufferSize) {
-            SDL_GpuQueueDestroyGpuBuffer(v->Device, bd->IndexBuffer);
+            SDL_GpuReleaseGpuBuffer(v->Device, bd->IndexBuffer);
             SDL_GpuWait(v->Device);
             bd->IndexBuffer = SDL_GpuCreateGpuBuffer(v->Device, SDL_GPU_BUFFERUSAGE_INDEX_BIT, indexBufferSize);
             bd->IndexBufferSize = indexBufferSize;
@@ -167,8 +167,8 @@ void ImGui_ImplSDLGpu_RenderDrawData(ImDrawData *draw_data, SDL_GpuRenderPass *r
         SDL_GpuEndCopyPass(indexCopyPass);
 
         SDL_GpuSubmit(copyCommandBuffer);
-        SDL_GpuQueueDestroyTransferBuffer(v->Device, vertexTransferBuffer);
-        SDL_GpuQueueDestroyTransferBuffer(v->Device, indexTransferBuffer);
+        SDL_GpuReleaseTransferBuffer(v->Device, vertexTransferBuffer);
+        SDL_GpuReleaseTransferBuffer(v->Device, indexTransferBuffer);
     }
     if (!pipeline) {
         ImGui_ImplSDLGpu_SetupRenderState(draw_data, renderPass, fb_width, fb_height, &bd->Pipeline);
@@ -284,7 +284,7 @@ bool ImGui_ImplSDLGpu_CreateFontsTexture() {
     SDL_GpuEndCopyPass(copyPass);
     SDL_GpuSubmit(uploadCmdBuf);
     bd->FontTextureSamplerBindings.texture = bd->FontImage;
-    SDL_GpuQueueDestroyTransferBuffer(v->Device, imageDataTransferBuffer);
+    SDL_GpuReleaseTransferBuffer(v->Device, imageDataTransferBuffer);
     io.Fonts->SetTexID((ImTextureID) &bd->FontTextureSamplerBindings);
 
     return true;
@@ -295,7 +295,7 @@ void ImGui_ImplSDLGpu_DestroyFontsTexture() {
     ImGui_ImplSDLGpu_Data *bd = ImGui_ImplSDLGpu_GetBackendData();
     ImGui_ImplSDLGpu_InitInfo *v = &bd->SDLGpuInitInfo;
 
-    if (bd->FontImage) { SDL_GpuQueueDestroyTexture(v->Device, bd->FontImage); }
+    if (bd->FontImage) { SDL_GpuReleaseTexture(v->Device, bd->FontImage); }
 }
 
 static void ImGui_ImplSDLGpu_CreateShaderModules(SDL_GpuDevice *device) {
@@ -461,13 +461,13 @@ void ImGui_ImplSDLGpu_DestroyDeviceObjects() {
     ImGui_ImplSDLGpu_InitInfo *v = &bd->SDLGpuInitInfo;
     ImGui_ImplSDLGpu_DestroyFontsTexture();
 
-    if (bd->Pipeline) { SDL_GpuQueueDestroyGraphicsPipeline(v->Device, bd->Pipeline); }
-    if (bd->SecondaryPipeline) { SDL_GpuQueueDestroyGraphicsPipeline(v->Device, bd->SecondaryPipeline); }
-    if (bd->VertexShader) { SDL_GpuQueueDestroyShader(v->Device, bd->VertexShader); }
-    if (bd->FragmentShader) { SDL_GpuQueueDestroyShader(v->Device, bd->FragmentShader); }
-    if (bd->FontSampler) { SDL_GpuQueueDestroySampler(v->Device, bd->FontSampler); }
-    if (bd->VertexBuffer) { SDL_GpuQueueDestroyGpuBuffer(v->Device, bd->VertexBuffer); }
-    if (bd->IndexBuffer) { SDL_GpuQueueDestroyGpuBuffer(v->Device, bd->IndexBuffer); }
+    if (bd->Pipeline) { SDL_GpuReleaseGraphicsPipeline(v->Device, bd->Pipeline); }
+    if (bd->SecondaryPipeline) { SDL_GpuReleaseGraphicsPipeline(v->Device, bd->SecondaryPipeline); }
+    if (bd->VertexShader) { SDL_GpuReleaseShader(v->Device, bd->VertexShader); }
+    if (bd->FragmentShader) { SDL_GpuReleaseShader(v->Device, bd->FragmentShader); }
+    if (bd->FontSampler) { SDL_GpuReleaseSampler(v->Device, bd->FontSampler); }
+    if (bd->VertexBuffer) { SDL_GpuReleaseGpuBuffer(v->Device, bd->VertexBuffer); }
+    if (bd->IndexBuffer) { SDL_GpuReleaseGpuBuffer(v->Device, bd->IndexBuffer); }
 }
 
 bool ImGui_ImplSDLGpu_Init(ImGui_ImplSDLGpu_InitInfo *info) {

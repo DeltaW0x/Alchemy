@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\bdc6fb3fed6c6b2fbcb0f3a24294ae8b\joltphysics-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\bdc6fb3fed6c6b2fbcb0f3a24294ae8b\joltphysics-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\bdc6fb3fed6c6b2fbcb0f3a24294ae8b\joltphysics-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\bdc6fb3fed6c6b2fbcb0f3a24294ae8b\joltphysics-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\bdc6fb3fed6c6b2fbcb0f3a24294ae8b\joltphysics-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\bdc6fb3fed6c6b2fbcb0f3a24294ae8b\joltphysics-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\bdc6fb3fed6c6b2fbcb0f3a24294ae8b\joltphysics-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\bdc6fb3fed6c6b2fbcb0f3a24294ae8b\joltphysics-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\8f75e8d85c128b0325fbb63db310b11d\joltphysics-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\be9229f8d64dd7045d5cad463ece9728\joltphysics-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-subbuild\CMakeFiles\joltphysics-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{294EF98B-AA11-3BE6-8FA7-C001C02F4557}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

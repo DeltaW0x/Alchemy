@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-build\CMakeFiles\_CMakeLTOTest-CXX\bin\CMakeFiles\b2d24d299706a90b209a6fdd7c54b40e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{49074D22-D8F4-3255-BCF3-80363E438D1C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

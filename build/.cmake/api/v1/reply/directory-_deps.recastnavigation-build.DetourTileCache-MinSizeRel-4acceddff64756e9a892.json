@@ -1,0 +1,62 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/recastnavigation-src/DetourTileCache/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/recastnavigation-build/DetourTileCache/MinSizeRel/DetourTileCache.lib"
+			],
+			"targetId" : "DetourTileCache::@f7c39a60d315b608e631",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/recastnavigation",
+			"paths" : 
+			[
+				"build/_deps/recastnavigation-src/DetourTileCache/Include/DetourTileCache.h",
+				"build/_deps/recastnavigation-src/DetourTileCache/Include/DetourTileCacheBuilder.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/recastnavigation-build/DetourTileCache",
+		"source" : "build/_deps/recastnavigation-src/DetourTileCache"
+	}
+}

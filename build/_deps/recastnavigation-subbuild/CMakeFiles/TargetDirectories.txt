@@ -1,0 +1,3 @@
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/recastnavigation-subbuild/CMakeFiles/recastnavigation-populate.dir
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/recastnavigation-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/recastnavigation-subbuild/CMakeFiles/ZERO_CHECK.dir

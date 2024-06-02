@@ -1,0 +1,73 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"KitzuCore_Core/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "KitzuCore_Core::@eb5cd78abe4751b15faf"
+		},
+		{
+			"id" : "SDL3-shared::@fc7b397d5a055aba6d5e"
+		},
+		{
+			"id" : "SDL3-static::@fc7b397d5a055aba6d5e"
+		},
+		{
+			"id" : "SDL3_test::@fc7b397d5a055aba6d5e"
+		},
+		{
+			"id" : "Detour::@52b53aa13f9db4b016e7"
+		},
+		{
+			"id" : "DetourTileCache::@f7c39a60d315b608e631"
+		},
+		{
+			"id" : "DebugUtils::@9cc7f35cc43993f1f38a"
+		},
+		{
+			"id" : "DetourCrowd::@558b0813d000e1399832"
+		},
+		{
+			"id" : "flecs::@764bb3ef446d4527d8e2"
+		},
+		{
+			"id" : "flecs_static::@764bb3ef446d4527d8e2"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Recast::@b83cefb9b778c867d075"
+		},
+		{
+			"id" : "Jolt::@964e89b4b52406ed572e"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "CMakePredefinedTargets"
+	},
+	"id" : "ALL_BUILD::@eb5cd78abe4751b15faf",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "KitzuCore_Core",
+		"source" : "KitzuCore_Core"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

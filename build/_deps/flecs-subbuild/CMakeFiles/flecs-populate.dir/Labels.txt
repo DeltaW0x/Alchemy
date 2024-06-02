@@ -1,0 +1,14 @@
+# Target labels
+ flecs-populate
+# Source files and their labels
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/flecs-populate
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/a21fa385f3b8c8a2cd0bc4a58c4c9eb3/flecs-populate.rule
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/62286b945dfe18e3b8c38435f6cfb561/flecs-populate-complete.rule
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/5d52a3fb809ba5e90253574819a670f9/flecs-populate-build.rule
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/5d52a3fb809ba5e90253574819a670f9/flecs-populate-configure.rule
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/5d52a3fb809ba5e90253574819a670f9/flecs-populate-download.rule
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/5d52a3fb809ba5e90253574819a670f9/flecs-populate-install.rule
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/5d52a3fb809ba5e90253574819a670f9/flecs-populate-mkdir.rule
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/5d52a3fb809ba5e90253574819a670f9/flecs-populate-patch.rule
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/5d52a3fb809ba5e90253574819a670f9/flecs-populate-test.rule
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/5d52a3fb809ba5e90253574819a670f9/flecs-populate-update.rule

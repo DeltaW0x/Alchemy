@@ -1,0 +1,10 @@
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\KITZUCORE_CORE\CMAKEFILES\_CMAKELTOTEST-CXX\BIN\CMAKEFILES\8A1C2979251D4B22B8CCE05E6BD00BCE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Core/CMakeFiles/_CMakeLTOTest-CXX/src -BD:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Core/CMakeFiles/_CMakeLTOTest-CXX/bin --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Core/CMakeFiles/_CMakeLTOTest-CXX/bin/lto-test.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

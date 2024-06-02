@@ -1,0 +1,150 @@
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\017B2BF1EA7C92A5EBCCA18A7361F7E2\SDL-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/tmp/sdl-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\017B2BF1EA7C92A5EBCCA18A7361F7E2\SDL-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\Documents\GitHub\Repos\KitzuCore\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/tmp/sdl-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\017B2BF1EA7C92A5EBCCA18A7361F7E2\SDL-POPULATE-UPDATE.RULE
+setlocal
+cd D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -P D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/tmp/sdl-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\017B2BF1EA7C92A5EBCCA18A7361F7E2\SDL-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\017B2BF1EA7C92A5EBCCA18A7361F7E2\SDL-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\017B2BF1EA7C92A5EBCCA18A7361F7E2\SDL-POPULATE-BUILD.RULE
+setlocal
+cd D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\017B2BF1EA7C92A5EBCCA18A7361F7E2\SDL-POPULATE-INSTALL.RULE
+setlocal
+cd D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\017B2BF1EA7C92A5EBCCA18A7361F7E2\SDL-POPULATE-TEST.RULE
+setlocal
+cd D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\CF158B7B1957C4DE076ABDC158E3E206\SDL-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/CMakeFiles/Debug/sdl-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\28AFC590D5F01C3495269E5B39DA1CE3\SDL-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DOCUMENTS\GITHUB\REPOS\KITZUCORE\BUILD\_DEPS\SDL-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild -BD:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild --check-stamp-file D:/Documents/GitHub/Repos/KitzuCore/build/_deps/sdl-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,3 @@
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/flecs-populate.dir
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-subbuild/CMakeFiles/ZERO_CHECK.dir

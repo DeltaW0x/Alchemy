@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.29/Modules/GNUInstallDirs.cmake
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-src/CMakeLists.txt
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-src/cmake/target_default_compile_options.cmake
+D:/Documents/GitHub/Repos/KitzuCore/build/_deps/flecs-src/cmake/target_default_compile_warnings.cmake

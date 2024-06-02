@@ -1,0 +1,63 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/recastnavigation-src/Recast/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/recastnavigation-build/Recast/MinSizeRel/Recast.lib"
+			],
+			"targetId" : "Recast::@b83cefb9b778c867d075",
+			"targetIndex" : 14,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/recastnavigation",
+			"paths" : 
+			[
+				"build/_deps/recastnavigation-src/Recast/Include/Recast.h",
+				"build/_deps/recastnavigation-src/Recast/Include/RecastAlloc.h",
+				"build/_deps/recastnavigation-src/Recast/Include/RecastAssert.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/recastnavigation-build/Recast",
+		"source" : "build/_deps/recastnavigation-src/Recast"
+	}
+}

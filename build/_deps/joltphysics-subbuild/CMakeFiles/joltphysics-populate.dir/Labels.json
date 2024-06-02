@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/joltphysics-populate"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/be9229f8d64dd7045d5cad463ece9728/joltphysics-populate.rule"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/8f75e8d85c128b0325fbb63db310b11d/joltphysics-populate-complete.rule"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/bdc6fb3fed6c6b2fbcb0f3a24294ae8b/joltphysics-populate-build.rule"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/bdc6fb3fed6c6b2fbcb0f3a24294ae8b/joltphysics-populate-configure.rule"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/bdc6fb3fed6c6b2fbcb0f3a24294ae8b/joltphysics-populate-download.rule"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/bdc6fb3fed6c6b2fbcb0f3a24294ae8b/joltphysics-populate-install.rule"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/bdc6fb3fed6c6b2fbcb0f3a24294ae8b/joltphysics-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/bdc6fb3fed6c6b2fbcb0f3a24294ae8b/joltphysics-populate-patch.rule"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/bdc6fb3fed6c6b2fbcb0f3a24294ae8b/joltphysics-populate-test.rule"
+		},
+		{
+			"file" : "D:/Documents/GitHub/Repos/KitzuCore/build/_deps/joltphysics-subbuild/CMakeFiles/bdc6fb3fed6c6b2fbcb0f3a24294ae8b/joltphysics-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"joltphysics-populate"
+		],
+		"name" : "joltphysics-populate"
+	}
+}

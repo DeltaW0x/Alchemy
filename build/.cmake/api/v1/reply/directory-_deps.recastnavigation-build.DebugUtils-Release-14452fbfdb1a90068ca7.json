@@ -1,0 +1,64 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/recastnavigation-src/DebugUtils/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/recastnavigation-build/DebugUtils/Release/DebugUtils.lib"
+			],
+			"targetId" : "DebugUtils::@9cc7f35cc43993f1f38a",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/recastnavigation",
+			"paths" : 
+			[
+				"build/_deps/recastnavigation-src/DebugUtils/Include/DebugDraw.h",
+				"build/_deps/recastnavigation-src/DebugUtils/Include/DetourDebugDraw.h",
+				"build/_deps/recastnavigation-src/DebugUtils/Include/RecastDebugDraw.h",
+				"build/_deps/recastnavigation-src/DebugUtils/Include/RecastDump.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/recastnavigation-build/DebugUtils",
+		"source" : "build/_deps/recastnavigation-src/DebugUtils"
+	}
+}

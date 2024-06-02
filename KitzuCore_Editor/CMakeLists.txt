@@ -5,9 +5,6 @@ project(KitzuCore_Editor)
 
 include(../Common_Cmake.txt)
 
-FetchContent_MakeAvailable(SDL flecs recastNavigation)
-include_directories(${vectormath_SOURCE_DIR})
-
 add_executable(${PROJECT_NAME}
         Source/main.cpp
         Source/imgui/imconfig.h
@@ -26,4 +23,5 @@ add_executable(${PROJECT_NAME}
         Source/imgui/imstb_textedit.h
         Source/imgui/imstb_truetype.h
 )
+
 target_link_libraries(${PROJECT_NAME} PUBLIC KitzuCore_Core SDL3::SDL3-static flecs::flecs_static Detour)

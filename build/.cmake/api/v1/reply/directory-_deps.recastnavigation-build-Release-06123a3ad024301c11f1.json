@@ -1,0 +1,116 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/recastnavigation-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 75,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/recastnavigation",
+			"paths" : 
+			[
+				"build/_deps/recastnavigation-build/version.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/_deps/recastnavigation-build/recastnavigation.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/recastnavigation",
+			"exportName" : "recastnavigation-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "DebugUtils::@9cc7f35cc43993f1f38a",
+					"index" : 7
+				},
+				{
+					"id" : "Detour::@52b53aa13f9db4b016e7",
+					"index" : 8
+				},
+				{
+					"id" : "DetourCrowd::@558b0813d000e1399832",
+					"index" : 9
+				},
+				{
+					"id" : "DetourTileCache::@f7c39a60d315b608e631",
+					"index" : 10
+				},
+				{
+					"id" : "Recast::@b83cefb9b778c867d075",
+					"index" : 14
+				}
+			],
+			"paths" : 
+			[
+				"_deps/recastnavigation-build/CMakeFiles/Export/4924bdfd16b98d877c245a9bd0ffe4a4/recastnavigation-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/recastnavigation",
+			"paths" : 
+			[
+				"build/_deps/recastnavigation-build/recastnavigation-config.cmake",
+				"build/_deps/recastnavigation-build/recastnavigation-config-version.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/recastnavigation-build",
+		"source" : "build/_deps/recastnavigation-src"
+	}
+}

@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\alerts.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\app.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\doc.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\expr\deserialize.c">
+      <Filter>src\addons\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\expr\serialize.c">
+      <Filter>src\addons\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\expr\utils.c">
+      <Filter>src\addons\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\expr\vars.c">
+      <Filter>src\addons\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\flecs_cpp.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\http.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\journal.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\json\deserialize.c">
+      <Filter>src\addons\json</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\json\json.c">
+      <Filter>src\addons\json</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\json\serialize.c">
+      <Filter>src\addons\json</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\json\serialize_field_info.c">
+      <Filter>src\addons\json</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\json\serialize_iter_rows.c">
+      <Filter>src\addons\json</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\json\serialize_query_info.c">
+      <Filter>src\addons\json</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\json\serialize_type_info.c">
+      <Filter>src\addons\json</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\log.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\meta\api.c">
+      <Filter>src\addons\meta</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\meta\cursor.c">
+      <Filter>src\addons\meta</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\meta\definitions.c">
+      <Filter>src\addons\meta</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\meta\meta.c">
+      <Filter>src\addons\meta</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\meta\serialized.c">
+      <Filter>src\addons\meta</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\meta_c.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\metrics.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\module.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\monitor.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\os_api_impl\os_api_impl.c">
+      <Filter>src\addons\os_api_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\parser.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\pipeline\pipeline.c">
+      <Filter>src\addons\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\pipeline\worker.c">
+      <Filter>src\addons\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\plecs.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\rest.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\rules\api.c">
+      <Filter>src\addons\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\rules\compile.c">
+      <Filter>src\addons\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\rules\engine.c">
+      <Filter>src\addons\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\rules\trav_cache.c">
+      <Filter>src\addons\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\rules\trav_down_cache.c">
+      <Filter>src\addons\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\rules\trav_up_cache.c">
+      <Filter>src\addons\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\rules\trivial_iter.c">
+      <Filter>src\addons\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\snapshot.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\stats.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\system\system.c">
+      <Filter>src\addons\system</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\timer.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\addons\units.c">
+      <Filter>src\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\bootstrap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\allocator.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\bitset.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\block_allocator.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\hash.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\hashmap.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\map.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\name_index.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\sparse.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\stack_allocator.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\strbuf.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\switch_list.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\datastructures\vec.c">
+      <Filter>src\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\entity.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\entity_filter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\entity_name.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\filter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\iter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\misc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\observable.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\observer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\os_api.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\poly.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\query.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\search.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\stage.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\storage\entity_index.c">
+      <Filter>src\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\storage\id_index.c">
+      <Filter>src\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\storage\table.c">
+      <Filter>src\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\storage\table_cache.c">
+      <Filter>src\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\storage\table_graph.c">
+      <Filter>src\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\value.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\src\world.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\alerts.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\app.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\c_types.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\component.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\delegate.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\entity.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\entity_view.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\field.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\flecs.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\impl\field.hpp">
+      <Filter>include\flecs\addons\cpp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\impl\iter.hpp">
+      <Filter>include\flecs\addons\cpp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\impl\world.hpp">
+      <Filter>include\flecs\addons\cpp\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\iter.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\lifecycle_traits.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\log.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\alerts\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\alerts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\alerts\builder_i.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\alerts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\alerts\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\alerts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\alerts\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\alerts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\app\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\app</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\app\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\app</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\component\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\component</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\doc\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\doc\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\doc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\entity\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\entity\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\enum\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\event\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\event</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\event\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\event</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\event\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\event</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\filter\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\filter\builder_i.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\filter\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\filter\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\id\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\id</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\id\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\id</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\json\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\meta\cursor.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\meta\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\meta\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\meta\opaque.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\metrics\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\metrics\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\metrics\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\metrics</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\module\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\module</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\monitor\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\monitor\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\observer\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\observer\builder_i.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\observer\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\observer\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\pipeline\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\pipeline\builder_i.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\pipeline\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\pipeline\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\query\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\query</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\query\builder_i.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\query</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\query\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\query</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\query\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\query</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\rest\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\rest</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\rest\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\rest</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\rule\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\rule</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\rule\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\rule</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\rule\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\rule</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\snapshot\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\snapshot\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\system\builder.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\system</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\system\builder_i.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\system</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\system\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\system</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\system\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\system</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\term\builder_i.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\term</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\term\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\term</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\term\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\term</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\timer\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\timer\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\units\decl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\units</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\mixins\units\impl.hpp">
+      <Filter>include\flecs\addons\cpp\mixins\units</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\pair.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\ref.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\table.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\type.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\array.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\builder.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\enum.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\function_traits.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\iterable.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\node_builder.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\signature.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\string.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\stringstream.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\utils\utils.hpp">
+      <Filter>include\flecs\addons\cpp\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\cpp\world.hpp">
+      <Filter>include\flecs\addons\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\deprecated.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\doc.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\expr.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\flecs_c.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\flecs_cpp.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\http.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\journal.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\json.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\log.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\meta.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\meta_c.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\metrics.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\module.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\monitor.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\os_api_impl.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\parser.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\pipeline.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\plecs.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\rest.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\rules.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\snapshot.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\stats.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\system.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\timer.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\addons\units.h">
+      <Filter>include\flecs\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\bake_config.h">
+      <Filter>include\flecs</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\os_api.h">
+      <Filter>include\flecs</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\addons.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\allocator.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\api_defines.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\api_flags.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\api_support.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\api_types.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\bitset.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\block_allocator.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\hashmap.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\map.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\sparse.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\strbuf.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\switch_list.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include\flecs\private\vec.h">
+      <Filter>include\flecs\private</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{B278146E-813B-3875-9A85-CD61BDAE498E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs">
+      <UniqueIdentifier>{31EAA2FA-237B-3142-87B3-A1676AF1E980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons">
+      <UniqueIdentifier>{0FAFEAFA-B46B-377F-A8DD-51C70FE4F5AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp">
+      <UniqueIdentifier>{E16CB525-7510-394A-9C53-53F1D5DFC497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\impl">
+      <UniqueIdentifier>{7C2B1252-770A-3F5D-8BF3-5228F23A54EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins">
+      <UniqueIdentifier>{866B3A9B-8531-3181-B0EC-9D8726FD4329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\alerts">
+      <UniqueIdentifier>{E7F551EA-6F68-3C0C-9076-3B9AA67C83EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\app">
+      <UniqueIdentifier>{FE68A06E-E36F-31BD-9F11-DA0802721CC5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\component">
+      <UniqueIdentifier>{D0348E3C-29DB-3072-BC63-885539BF81D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\doc">
+      <UniqueIdentifier>{ABEF1E2E-C8F8-340C-88E3-BE1A9583923A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\entity">
+      <UniqueIdentifier>{519531A6-F992-3035-A499-4EA9FE0C0A4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\enum">
+      <UniqueIdentifier>{8F6FBDDC-EEFF-33FF-B58A-3BC1C2C7C4AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\event">
+      <UniqueIdentifier>{A51F5DEF-F151-3075-9253-4A0D8F7236DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\filter">
+      <UniqueIdentifier>{BD4343CB-8719-37E6-83B1-323FFBB0BFF9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\id">
+      <UniqueIdentifier>{5588074C-7421-3AD8-895F-9B11DD33F35D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\json">
+      <UniqueIdentifier>{63FA7859-102D-30E6-AA67-962A8013DF59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\meta">
+      <UniqueIdentifier>{B2A29040-F87D-3FFE-A017-BE65A7E11108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\metrics">
+      <UniqueIdentifier>{DEE6BD40-5EB8-3F90-99DF-3AA40B70C0A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\module">
+      <UniqueIdentifier>{DEE6C99D-7EA1-31EE-8BD3-00E53362CC95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\monitor">
+      <UniqueIdentifier>{11C91203-A6DE-3D17-BE8E-51A9D40DFF07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\observer">
+      <UniqueIdentifier>{987C82B4-654F-3167-910A-90DA6217B5B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\pipeline">
+      <UniqueIdentifier>{FF50B79E-4E80-3E23-80F6-AD7B525245B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\query">
+      <UniqueIdentifier>{6963955F-2FAE-3C8F-805F-94006596BBC5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\rest">
+      <UniqueIdentifier>{5AC84F83-9753-3989-857B-E5F3B0454BCF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\rule">
+      <UniqueIdentifier>{7B214E8A-1AF0-391F-8CC6-25CB76D66379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\snapshot">
+      <UniqueIdentifier>{357079DC-6A65-3EEE-AB7D-825D504BA39F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\system">
+      <UniqueIdentifier>{DB0DCEEA-0DC8-3B47-8C7E-5535326730BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\term">
+      <UniqueIdentifier>{B501B77C-31B2-318C-BFE6-4CA21A7FEF34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\timer">
+      <UniqueIdentifier>{C5C771C8-B7AF-3DA2-AA6A-76D03BDC4864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\mixins\units">
+      <UniqueIdentifier>{C3E2D942-956C-3123-BB15-5DCE83D1ABE6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\addons\cpp\utils">
+      <UniqueIdentifier>{8C29A628-B370-37DB-A5E1-9125A69C780C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\flecs\private">
+      <UniqueIdentifier>{10562CDF-A0F3-39AB-A4FE-31424256164A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{C00694ED-A789-35FC-A963-ED556F6891A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons">
+      <UniqueIdentifier>{528F5DD9-E130-366E-B45F-FA11F271C867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\expr">
+      <UniqueIdentifier>{C9F88016-155F-3F7C-B45E-65F3226411C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\json">
+      <UniqueIdentifier>{C6FC7916-9DD7-3948-BD8A-7352B571E61B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\meta">
+      <UniqueIdentifier>{99476A31-9A36-3C5E-8023-5CCD8987DB3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\os_api_impl">
+      <UniqueIdentifier>{BD9D3C3F-7535-37B0-AD8C-0E9494BBFAD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\pipeline">
+      <UniqueIdentifier>{D9814F71-A9F5-3CAC-90F9-D6B8FD1A7FA5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\rules">
+      <UniqueIdentifier>{62421372-C70C-3C47-9EAA-482CA305EEB2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\system">
+      <UniqueIdentifier>{47D66D9F-9E55-371A-8FA4-8A3B23C073F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\datastructures">
+      <UniqueIdentifier>{D40CF60D-3720-3B59-A079-6CD507E07C65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\storage">
+      <UniqueIdentifier>{1B937213-EFE3-37E1-A14F-9FB60FDCA28A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -7,37 +7,46 @@
 #include <SDL3/SDL.h>
 #include "../Miscellaneous/Types.h"
 
-namespace kc {
-    class Renderer {
+namespace kc
+{
+    class Renderer
+    {
     public:
-        Renderer() {
+        Renderer()
+        {
+            
         }
 
-        Renderer(SDL_Window *window, SDL_GpuBackendBits backend, SDL_GpuSwapchainComposition composition,
-                 SDL_GpuPresentMode presentmode);
+        Renderer(SDL_Window *window, SDL_GpuBackendBits backend, SDL_GpuSwapchainComposition composition, SDL_GpuSampleCount MSAA);
 
-        void StartDraw(SDL_GpuColor clearColor);
-
+        void BeginDraw();
         void EndDraw();
 
         void Clean();
 
-        SDL_GpuDevice* GetDevice() {
+        SDL_GpuDevice *GetDevice() const
+        {
             return m_pDevice;
         }
-        SDL_GpuRenderPass* GetMainRenderPass() {
-            return m_pMainRenderPass;
+        SDL_GpuPresentMode GetPresentMode() const
+        {
+            return m_presentMode;
         }
+        SDL_GpuSwapchainComposition GetSwapchainComposition() const
+        {
+            return m_swapchainComposition;
+        }
+    private:
+        void CheckIfSwapchainChanged();
+
     private:
         SDL_GpuDevice *m_pDevice = nullptr;
         SDL_Window *m_pWindow = nullptr;
-        SDL_GpuViewport m_viewport;
-        SDL_GpuRect m_scissor;
+        
         SDL_GpuBackend m_choosenBackend;
-        SDL_GpuCommandBuffer *m_pMainCommandBuffer;
-        SDL_GpuTexture *m_pBackbufferTexture;
-        SDL_GpuRenderPass *m_pMainRenderPass;
-        u32 m_backbufferWidth, m_backbufferHeight;
+        SDL_GpuPresentMode m_presentMode;
+        SDL_GpuSwapchainComposition m_swapchainComposition;
+        SDL_GpuSampleCount m_sampleCount;
     };
 }
-#endif //RENDERER_H
+#endif // RENDERER_H

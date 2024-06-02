@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{379047BC-6EEA-3EAB-94B8-535AB4CF0BF1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>KitzuCore_Editor</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\GitHub\Repos\KitzuCore\build\KitzuCore_Editor\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">KitzuCore_Editor.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">KitzuCore_Editor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\GitHub\Repos\KitzuCore\build\KitzuCore_Editor\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">KitzuCore_Editor.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">KitzuCore_Editor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Documents\GitHub\Repos\KitzuCore\build\KitzuCore_Editor\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">KitzuCore_Editor.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">KitzuCore_Editor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Documents\GitHub\Repos\KitzuCore\build\KitzuCore_Editor\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">KitzuCore_Editor.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">KitzuCore_Editor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;flecs_STATIC;_DEBUG;JPH_OBJECT_LAYER_BITS=16;JPH_DEBUG_RENDERER;JPH_PROFILE_ENABLED;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_DEBUG_RENDERER;JPH_PROFILE_ENABLED;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;flecs_STATIC;_DEBUG;JPH_OBJECT_LAYER_BITS=16;JPH_DEBUG_RENDERER;JPH_PROFILE_ENABLED;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /arch:AVX2</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\KitzuCore_Core\Debug\KitzuCore_Core.lib;..\_deps\sdl-build\Debug\SDL3-static.lib;..\_deps\flecs-build\Debug\flecs_static.lib;..\_deps\recastnavigation-build\Detour\Debug\Detour-d.lib;kernel32.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;ole32.lib;oleaut32.lib;version.lib;uuid.lib;advapi32.lib;setupapi.lib;shell32.lib;dinput8.lib;wsock32.lib;ws2_32.lib;..\_deps\joltphysics-build\Debug\Jolt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/Debug/KitzuCore_Editor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/Debug/KitzuCore_Editor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_DEBUG_RENDERER;JPH_PROFILE_ENABLED;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_DEBUG_RENDERER;JPH_PROFILE_ENABLED;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_DEBUG_RENDERER;JPH_PROFILE_ENABLED;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR="Release";</PreprocessorDefinitions>
+      <IncludePaths>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /arch:AVX2</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\KitzuCore_Core\Release\KitzuCore_Core.lib;..\_deps\sdl-build\Release\SDL3-static.lib;..\_deps\flecs-build\Release\flecs_static.lib;..\_deps\recastnavigation-build\Detour\Release\Detour.lib;kernel32.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;ole32.lib;oleaut32.lib;version.lib;uuid.lib;advapi32.lib;setupapi.lib;shell32.lib;dinput8.lib;wsock32.lib;ws2_32.lib;..\_deps\joltphysics-build\Release\Jolt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/Release/KitzuCore_Editor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/Release/KitzuCore_Editor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /arch:AVX2</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\KitzuCore_Core\MinSizeRel\KitzuCore_Core.lib;..\_deps\sdl-build\MinSizeRel\SDL3-static.lib;..\_deps\flecs-build\MinSizeRel\flecs_static.lib;..\_deps\recastnavigation-build\Detour\MinSizeRel\Detour.lib;kernel32.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;ole32.lib;oleaut32.lib;version.lib;uuid.lib;advapi32.lib;setupapi.lib;shell32.lib;dinput8.lib;wsock32.lib;ws2_32.lib;..\_deps\joltphysics-build\MinSizeRel\Jolt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/MinSizeRel/KitzuCore_Editor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/MinSizeRel/KitzuCore_Editor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;flecs_STATIC;JPH_OBJECT_LAYER_BITS=16;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /arch:AVX2</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Core\Source;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-src\include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-src\Detour\Include;D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-src\Build\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\KitzuCore_Core\RelWithDebInfo\KitzuCore_Core.lib;..\_deps\sdl-build\RelWithDebInfo\SDL3-static.lib;..\_deps\flecs-build\RelWithDebInfo\flecs_static.lib;..\_deps\recastnavigation-build\Detour\RelWithDebInfo\Detour.lib;kernel32.lib;user32.lib;gdi32.lib;winmm.lib;imm32.lib;ole32.lib;oleaut32.lib;version.lib;uuid.lib;advapi32.lib;setupapi.lib;shell32.lib;dinput8.lib;wsock32.lib;ws2_32.lib;..\_deps\joltphysics-build\RelWithDebInfo\Jolt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/RelWithDebInfo/KitzuCore_Editor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/RelWithDebInfo/KitzuCore_Editor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Documents/GitHub/Repos/KitzuCore/KitzuCore_Editor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/Repos/KitzuCore -BD:/Documents/GitHub/Repos/KitzuCore/build --check-stamp-file D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FetchContent.cmake;D:\Documents\GitHub\Repos\KitzuCore\Common_Cmake.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\GitHub\Repos\KitzuCore\build\KitzuCore_Editor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Documents/GitHub/Repos/KitzuCore/KitzuCore_Editor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/Repos/KitzuCore -BD:/Documents/GitHub/Repos/KitzuCore/build --check-stamp-file D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FetchContent.cmake;D:\Documents\GitHub\Repos\KitzuCore\Common_Cmake.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\GitHub\Repos\KitzuCore\build\KitzuCore_Editor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Documents/GitHub/Repos/KitzuCore/KitzuCore_Editor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/Repos/KitzuCore -BD:/Documents/GitHub/Repos/KitzuCore/build --check-stamp-file D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FetchContent.cmake;D:\Documents\GitHub\Repos\KitzuCore\Common_Cmake.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Documents\GitHub\Repos\KitzuCore\build\KitzuCore_Editor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Documents/GitHub/Repos/KitzuCore/KitzuCore_Editor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documents/GitHub/Repos/KitzuCore -BD:/Documents/GitHub/Repos/KitzuCore/build --check-stamp-file D:/Documents/GitHub/Repos/KitzuCore/build/KitzuCore_Editor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FetchContent.cmake;D:\Documents\GitHub\Repos\KitzuCore\Common_Cmake.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Documents\GitHub\Repos\KitzuCore\build\KitzuCore_Editor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\main.cpp" />
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imconfig.h" />
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui.cpp" />
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui.h" />
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui_demo.cpp" />
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui_draw.cpp" />
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui_impl_sdl3.cpp" />
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui_impl_sdl3.h" />
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui_impl_sdlgpu.cpp" />
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui_impl_sdlgpu.h" />
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui_internal.h" />
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui_tables.cpp" />
+    <ClCompile Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imgui_widgets.cpp" />
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imstb_rectpack.h" />
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imstb_textedit.h" />
+    <ClInclude Include="D:\Documents\GitHub\Repos\KitzuCore\KitzuCore_Editor\Source\imgui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Documents\GitHub\Repos\KitzuCore\build\ZERO_CHECK.vcxproj">
+      <Project>{D5C5AEAF-05CA-385E-888B-852FF2147ED7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\recastnavigation-build\Detour\Detour.vcxproj">
+      <Project>{9CFA4069-8B08-3C0E-9B09-9E00F75AF39E}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\joltphysics-build\Jolt.vcxproj">
+      <Project>{DA7BFB9A-C784-3979-BD46-87636EEF9DF7}</Project>
+      <Name>Jolt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\Repos\KitzuCore\build\KitzuCore_Core\KitzuCore_Core.vcxproj">
+      <Project>{E5E94409-3005-374C-83C3-639025010910}</Project>
+      <Name>KitzuCore_Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\sdl-build\SDL3-static.vcxproj">
+      <Project>{646CE2F1-D9FB-3C52-A552-14D81DC1B985}</Project>
+      <Name>SDL3-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-build\flecs_static.vcxproj">
+      <Project>{D5F36D0B-12BA-3A2E-B2B3-7A779815433F}</Project>
+      <Name>flecs_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

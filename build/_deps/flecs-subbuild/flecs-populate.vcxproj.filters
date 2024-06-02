@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\5d52a3fb809ba5e90253574819a670f9\flecs-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\5d52a3fb809ba5e90253574819a670f9\flecs-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\5d52a3fb809ba5e90253574819a670f9\flecs-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\5d52a3fb809ba5e90253574819a670f9\flecs-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\5d52a3fb809ba5e90253574819a670f9\flecs-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\5d52a3fb809ba5e90253574819a670f9\flecs-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\5d52a3fb809ba5e90253574819a670f9\flecs-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\5d52a3fb809ba5e90253574819a670f9\flecs-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\62286b945dfe18e3b8c38435f6cfb561\flecs-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\a21fa385f3b8c8a2cd0bc4a58c4c9eb3\flecs-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Documents\GitHub\Repos\KitzuCore\build\_deps\flecs-subbuild\CMakeFiles\flecs-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{00DE4A40-DC5A-395A-B7B1-FFF9821CD89A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
