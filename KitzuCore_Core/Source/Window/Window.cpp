@@ -21,7 +21,7 @@ namespace kc {
             }
         }
     }
-    bool Window::IsQuitting() {
+    bool Window::IsOpen() {
         return m_bQuit;
     }
     void Window::Clean() const {

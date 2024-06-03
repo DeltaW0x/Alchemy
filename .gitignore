@@ -9,6 +9,9 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+cmake-build-debug-visual-studio
+cmake-build-debug
+.idea
 CMakeUserPresets.json
 build
 .vscode/*
@@ -23,3 +26,4 @@ build
 
 # Built Visual Studio Code Extensions
 *.vsix
+.vscode

@@ -17,7 +17,7 @@ namespace kc {
         void PollEvent();
         void Clean() const;
 
-        bool IsQuitting();
+        bool IsOpen();
 
         SDL_Window *GetSdlWindow() const;
 
