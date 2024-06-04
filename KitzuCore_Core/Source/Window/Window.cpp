@@ -3,28 +3,39 @@
 //
 
 #include "Window.h"
-#include <Jolt/Jolt.h>
+#include "Miscellaneous/Assert.h"
+#include "imgui/imgui_impl_sdl3.h"
 namespace kc {
-    Window::Window(const char *title, uint32_t with, uint32_t height,u32 flags) : m_title(title), m_width(with),
-                                                                        m_height(height) {
-        m_pWindow = SDL_CreateWindow(m_title, m_width, m_height, flags);
-        AL_ASSERT(m_pWindow != nullptr, "Failed to create SDL Window: %s", SDL_GetError())
+    Window::Window(const std::string title , uint32_t with, uint32_t height,u32 flags, bool useImgui) : m_title(title),
+        m_width(with),
+        m_height(height),
+        m_bImguiEnabled(useImgui) {
+        if(g_bDebug) {
+            m_title.append(" [DEBUG]");
+        }
+        m_pWindow = SDL_CreateWindow(m_title.c_str(), m_width, m_height, flags);
+        ASSERT(m_pWindow != nullptr, "Failed to create SDL Window: %s, aborting application", SDL_GetError())
     }
 
     void Window::PollEvent() {
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
+            if(m_bImguiEnabled) {
+                ImGui_ImplSDL3_ProcessEvent(&e);
+            }
             switch (e.type) {
                 case SDL_EVENT_WINDOW_CLOSE_REQUESTED:
-                    m_bQuit = true;
+                    m_bIsOpen = false;
                     break;
             }
         }
     }
-    bool Window::IsOpen() {
-        return m_bQuit;
+
+    bool Window::IsOpen() const {
+        return m_bIsOpen;
     }
-    void Window::Clean() const {
+
+    void Window::Clean() {
         SDL_DestroyWindow(m_pWindow);
     }
 
