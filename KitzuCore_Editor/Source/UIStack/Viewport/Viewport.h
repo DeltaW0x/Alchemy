@@ -6,7 +6,7 @@
 #define VIEWPORT_H
 #include <imgui/imgui.h>
 #include <imgui/imgui_impl_sdlgpu.h>
-
+#include <Miscellaneous/Assert.h>
 class Viewport {
 public:
     Viewport() {
@@ -26,6 +26,7 @@ public:
             if(m_currentViewportSize.x > 0 && m_currentViewportSize.y > 0 ) {
                 m_previousViewportSize = m_currentViewportSize;
                 m_bSizeChanged = true;
+                INFO("The viewport changed size: {0}, {1}", m_currentViewportSize.x, m_currentViewportSize.y);
             }
         }
         else {

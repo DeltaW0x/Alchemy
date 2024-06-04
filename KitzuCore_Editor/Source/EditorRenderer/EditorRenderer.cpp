@@ -38,7 +38,7 @@ EditorRenderer::EditorRenderer(SDL_Window *window, UIStackManager *uiManager) : 
     m_pHdrRenderTargetInfo.layerCount = 1;
     m_pHdrRenderTargetInfo.levelCount = 1;
     m_pHdrRenderTargetInfo.sampleCount = SDL_GPU_SAMPLECOUNT_1;
-    m_pHdrRenderTargetInfo.format = SDL_GPU_TEXTUREFORMAT_R16G16B16A16;
+    m_pHdrRenderTargetInfo.format = SDL_GPU_TEXTUREFORMAT_R8G8B8A8;
     m_pHdrRenderTargetInfo.usageFlags = SDL_GPU_TEXTUREUSAGE_SAMPLER_BIT | SDL_GPU_TEXTUREUSAGE_COLOR_TARGET_BIT;
     m_pHdrRenderTarget = SDL_GpuCreateTexture(m_pLowLevelRenderer->GetDevice(), &m_pHdrRenderTargetInfo);
 
@@ -86,7 +86,7 @@ void EditorRenderer::BeginDraw() {
     SDL_GpuColorAttachmentInfo hdrAttachmentInfoClear = {};
     hdrAttachmentInfoClear.loadOp = SDL_GPU_LOADOP_CLEAR;
     hdrAttachmentInfoClear.storeOp = SDL_GPU_STOREOP_STORE;
-    hdrAttachmentInfoClear.clearColor = {1,0,0,1};
+    hdrAttachmentInfoClear.clearColor = {0,0,0,1};
     hdrAttachmentInfoClear.cycle = SDL_TRUE;
     hdrAttachmentInfoClear.textureSlice.texture = m_pHdrRenderTarget;
 
@@ -146,6 +146,9 @@ void EditorRenderer::EndDraw() {
 }
 
 void EditorRenderer::Clean() {
+    SDL_GpuReleaseSampler(m_pLowLevelRenderer->GetDevice(),m_pViewportTextureSampler);
+    SDL_GpuReleaseTexture(m_pLowLevelRenderer->GetDevice(),m_pHdrRenderTarget);
+    SDL_GpuReleaseTexture(m_pLowLevelRenderer->GetDevice(),m_pSdrRenderTarget);
     m_pLowLevelRenderer->Clean();
 }
 
