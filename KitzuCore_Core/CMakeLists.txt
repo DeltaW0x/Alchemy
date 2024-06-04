@@ -7,8 +7,6 @@ include(../CommonLibraries.txt)
 
 add_library(${PROJECT_NAME}
         Source/KitzuCore.h
-        Source/Window/Window.h
-        Source/Window/Window.cpp
         Source/Renderer/Renderer.h
         Source/Renderer/Renderer.cpp
         Source/Miscellaneous/Types.h
@@ -28,8 +26,6 @@ add_library(${PROJECT_NAME}
         Source/imgui/imstb_rectpack.h
         Source/imgui/imstb_textedit.h
         Source/imgui/imstb_truetype.h
-        Source/Context/Context.cpp
-        Source/Context/Context.h
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC Source)

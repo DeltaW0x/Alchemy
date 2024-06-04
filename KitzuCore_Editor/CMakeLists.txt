@@ -7,6 +7,11 @@ include(AssimpConfig.txt)
 
 add_executable(${PROJECT_NAME}
         Source/main.cpp
+        Source/UIStack/UIStackManager.h
+        Source/UIStack/UIElement.h
+        Source/EditorRenderer/EditorRenderer.cpp
+        Source/EditorRenderer/EditorRenderer.h
+        Source/UIStack/Viewport/Viewport.h
 )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC

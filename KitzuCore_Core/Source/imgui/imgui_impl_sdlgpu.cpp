@@ -217,8 +217,7 @@ void ImGui_ImplSDLGpu_RenderDrawData(ImDrawData *draw_data, SDL_GpuRenderPass *r
 
                 SDL_GpuSetScissor(renderPass, &scissor);
                 SDL_GpuBindFragmentSamplers(renderPass, 0, (SDL_GpuTextureSamplerBinding *) pcmd->TextureId, 1);
-                SDL_GpuDrawIndexedPrimitives(renderPass, pcmd->VtxOffset + global_vtx_offset,
-                                               pcmd->IdxOffset + global_idx_offset, pcmd->ElemCount / 3, 1);
+                SDL_GpuDrawIndexedPrimitives(renderPass, pcmd->VtxOffset + global_vtx_offset,pcmd->IdxOffset + global_idx_offset, pcmd->ElemCount / 3, 1);
             }
         }
         global_idx_offset += cmd_list->IdxBuffer.Size;
@@ -533,8 +532,6 @@ static void ImGui_ImplSDLGpu_CreateWindow(ImGuiViewport *viewport) {
     ImGui_ImplSDLGpu_Data *bd = ImGui_ImplSDLGpu_GetBackendData();
     ImGui_ImplSDLGpu_InitInfo *v = &bd->SDLGpuInitInfo;
     ImGui_ImplSDLGpu_ViewportData *vd = IM_NEW(ImGui_ImplSDLGpu_ViewportData)();
-    ImGuiPlatformIO &platform_io = ImGui::GetPlatformIO();
-    platform_io.Platform_CreateWindow(viewport);
     vd->Window = (SDL_Window *) viewport->PlatformHandle;
     vd->WindowOwned = true;
     viewport->RendererUserData = vd;
@@ -551,23 +548,14 @@ static void ImGui_ImplSDLGpu_DestroyWindow(ImGuiViewport *viewport) {
     if (ImGui_ImplSDLGpu_ViewportData *vd = (ImGui_ImplSDLGpu_ViewportData *) viewport->RendererUserData) {
         ImGui_ImplSDLGpu_InitInfo *v = &bd->SDLGpuInitInfo;
         if (vd->WindowOwned) {
+            ImGuiPlatformIO &platform_io = ImGui::GetPlatformIO();
             SDL_GpuWait(v->Device);
             SDL_GpuUnclaimWindow(v->Device, vd->Window);
+            platform_io.Platform_DestroyWindow(viewport);
         }
         IM_DELETE(vd);
     }
     viewport->RendererUserData = nullptr;
-}
-
-static void ImGui_ImplSDLGpu_SetWindowSize(ImGuiViewport *viewport, ImVec2 size) {
-    ImGui_ImplSDLGpu_Data *bd = ImGui_ImplSDLGpu_GetBackendData();
-    ImGui_ImplSDLGpu_ViewportData *vd = (ImGui_ImplSDLGpu_ViewportData *) viewport->RendererUserData;
-
-    if (!vd->Window) {
-        return;
-    }
-    ImGui_ImplSDLGpu_InitInfo *v = &bd->SDLGpuInitInfo;
-    SDL_SetWindowSize(vd->Window, (int) size.x, (int) size.y);
 }
 
 static void ImGui_ImplSDLGpu_RenderWindow(ImGuiViewport *viewport, void *) {
@@ -583,14 +571,14 @@ static void ImGui_ImplSDLGpu_RenderWindow(ImGuiViewport *viewport, void *) {
     Uint32 w, h;
     SDL_GpuTexture *swapchainTexture = SDL_GpuAcquireSwapchainTexture(cmdbuf, vd->Window, &w, &h);
 
-    if (swapchainTexture != NULL) {
-        SDL_GpuColorAttachmentInfo colorAttachmentInfo = {0};
+    if (!swapchainTexture) {
+        SDL_GpuColorAttachmentInfo colorAttachmentInfo = {};
         colorAttachmentInfo.textureSlice.texture = swapchainTexture;
         colorAttachmentInfo.clearColor = SDL_GpuColor{0.16f, 0.16f, 0.16f, 1.0f};
         colorAttachmentInfo.loadOp = SDL_GPU_LOADOP_CLEAR;
         colorAttachmentInfo.storeOp = SDL_GPU_STOREOP_STORE;
 
-        SDL_GpuRenderPass *renderPass = SDL_GpuBeginRenderPass(cmdbuf, &colorAttachmentInfo, 1, NULL);
+        SDL_GpuRenderPass *renderPass = SDL_GpuBeginRenderPass(cmdbuf, &colorAttachmentInfo, 1, nullptr);
         ImGui_ImplSDLGpu_RenderDrawData(viewport->DrawData, renderPass, &bd->SecondaryPipeline);
         SDL_GpuEndRenderPass(renderPass);
     }
@@ -601,7 +589,6 @@ void ImGui_ImplSDLGpu_InitPlatformInterface() {
     ImGuiPlatformIO &platform_io = ImGui::GetPlatformIO();
     platform_io.Renderer_CreateWindow = ImGui_ImplSDLGpu_CreateWindow;
     platform_io.Renderer_DestroyWindow = ImGui_ImplSDLGpu_DestroyWindow;
-    platform_io.Renderer_SetWindowSize = ImGui_ImplSDLGpu_SetWindowSize;
     platform_io.Renderer_RenderWindow = ImGui_ImplSDLGpu_RenderWindow;
 }
 
