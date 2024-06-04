@@ -15,14 +15,14 @@ public:
     Renderer(SDL_Window *window, SDL_GpuBackendBits backend, SDL_GpuSwapchainComposition composition,
              SDL_GpuSampleCount MSAA, SDL_GpuPresentMode presentMode);
 
+    ~Renderer();
+
     void BeginDraw();
     void EndDraw();
 
     void CheckSwapchainSize();
 
     void SetClearColor(SDL_GpuColor clearColor);
-
-    void Clean();
 
     [[nodiscard]] SDL_GpuTexture *GetSwapchainTexture();
 

@@ -7,8 +7,6 @@
 #include <imgui/imgui.h>
 class UIElement {
 public:
-    virtual void Init() {
-    };
 
     virtual void Update() {
     };

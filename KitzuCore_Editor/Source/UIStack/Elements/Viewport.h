@@ -9,9 +9,7 @@
 #include <Miscellaneous/Assert.h>
 class Viewport {
 public:
-    Viewport() {
-
-    }
+    Viewport() = default;
 
     bool ViewportSizeChanged(ImVec2* newSize) const {
         *newSize = m_currentViewportSize;

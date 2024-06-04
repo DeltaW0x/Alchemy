@@ -45,6 +45,13 @@ Renderer::Renderer(SDL_Window *window,
     m_MainRTAttachmentInfo.cycle = SDL_TRUE;
 }
 
+Renderer::~Renderer() {
+    SDL_GpuWait(m_pDevice);
+    SDL_GpuUnclaimWindow(m_pDevice, m_pWindow);
+    SDL_GpuReleaseTexture(m_pDevice, m_pHDRMainRenderTarget);
+    SDL_GpuDestroyDevice(m_pDevice);
+}
+
 void Renderer::BeginDraw() {
     m_pMainCommandBuffer = SDL_GpuAcquireCommandBuffer(m_pDevice);
     m_pSwapchainTexture = SDL_GpuAcquireSwapchainTexture(m_pMainCommandBuffer, m_pWindow, &m_curSwapchainWidth,
@@ -89,13 +96,6 @@ void Renderer::CheckSwapchainSize() {
 
 void Renderer::SetClearColor(const SDL_GpuColor clearColor) {
     m_clearColor = clearColor;
-}
-
-void Renderer::Clean() {
-    SDL_GpuWait(m_pDevice);
-    SDL_GpuUnclaimWindow(m_pDevice, m_pWindow);
-    SDL_GpuReleaseTexture(m_pDevice, m_pHDRMainRenderTarget);
-    SDL_GpuDestroyDevice(m_pDevice);
 }
 
 SDL_GpuTexture *Renderer::GetSwapchainTexture() {

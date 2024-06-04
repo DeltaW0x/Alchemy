@@ -11,7 +11,12 @@ add_executable(${PROJECT_NAME}
         Source/UIStack/UIElement.h
         Source/EditorRenderer/EditorRenderer.cpp
         Source/EditorRenderer/EditorRenderer.h
-        Source/UIStack/Viewport/Viewport.h
+        Source/UIStack/Elements/Viewport.h
+        Source/UIStack/Elements/AssetView.h
+        Source/UIStack/UILayer.h
+        Source/Context/EditorContext.cpp
+        Source/Context/EditorContext.h
+        Source/UIStack/Elements/TopMenuBar.h
 )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
