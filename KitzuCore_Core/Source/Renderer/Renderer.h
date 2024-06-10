@@ -1,64 +1,43 @@
 //
-// Created by lucac on 27/05/2024.
+// Created by lucac on 09/06/2024.
 //
 
 #ifndef RENDERER_H
 #define RENDERER_H
+
+#include <unordered_map>
 #include <SDL3/SDL.h>
-
-#include "imgui/imgui.h"
-#include "Miscellaneous/Types.h"
-
-
+#include <vector>
 class Renderer {
 public:
-    Renderer(SDL_Window *window, SDL_GpuBackendBits backend, SDL_GpuSwapchainComposition composition,
-             SDL_GpuSampleCount MSAA, SDL_GpuPresentMode presentMode);
+    Renderer(SDL_GpuDevice* device,  SDL_Window* window);
 
-    ~Renderer();
+    void Dispose();
 
-    void BeginDraw();
+    void StartDraw();
     void EndDraw();
 
-    void CheckSwapchainSize();
-
-    void SetClearColor(SDL_GpuColor clearColor);
-
-    [[nodiscard]] SDL_GpuTexture *GetSwapchainTexture();
-
-    [[nodiscard]] SDL_GpuCommandBuffer* GetMainCommandBuffer();
-
-    [[nodiscard]] SDL_GpuDevice *GetDevice() const;
-
-    [[nodiscard]] SDL_GpuPresentMode GetPresentMode() const;
-
-    [[nodiscard]] SDL_GpuSwapchainComposition GetSwapchainComposition() const;
-
-    [[nodiscard]] SDL_GpuColorAttachmentInfo GetRenderTargetAttachmentInfo() const;
-
-    SDL_GpuColorAttachmentInfo m_MainRTAttachmentInfo = {};
+    SDL_GpuTexture* GetMainRT();
 
 private:
-    SDL_GpuDevice *m_pDevice = nullptr;
-    SDL_Window *m_pWindow = nullptr;
+    void HandleSwapchainChange();
+private:
+    SDL_GpuTexture* m_pSwapchainTexture    = NULL;
+    SDL_GpuTexture* m_pRenderTargetTexture = NULL;
 
-    SDL_GpuTexture *m_pSwapchainTexture = nullptr;
-    SDL_GpuTexture *m_pHDRMainRenderTarget = nullptr;
+    SDL_GpuDevice *m_pGpuDevice  = NULL;
+    SDL_Window    *m_pMainWindow = NULL;
 
-    SDL_GpuTextureCreateInfo m_HDRMainRTCreateInfo = {};
+    SDL_GpuTextureCreateInfo m_renderTargetInfo = {};
 
-    SDL_GpuCommandBuffer *m_pMainCommandBuffer = nullptr;
+    SDL_GpuCommandBuffer* m_pInternalCmd = NULL;
 
-    SDL_GpuBackend m_choosenBackend;
-    SDL_GpuPresentMode m_presentMode;
-    SDL_GpuSwapchainComposition m_swapchainComposition;
-    SDL_GpuSampleCount m_sampleCount;
-    SDL_GpuColor m_clearColor = {0, 0, 0, 1};
+    uint32_t m_currentSwapchainWidth = 0,m_currentSwapchainHeight = 0;
+    uint32_t m_previousSwapchainWidth = 0,m_previousSwapchainHeight = 0;
 
-    u32 m_prevSwpachainWidth = 0;
-    u32 m_prevSwapchainHeight = 0;
-    u32 m_curSwapchainWidth = 0;
-    u32 m_curSwapchainHeight = 0;
+    SDL_GpuBuffer* m_pUberVertexBuffer;
+    SDL_GpuBuffer* m_pUberIndexBuffer;
+
 };
 
-#endif // RENDERER_H
+#endif //RENDERER_H
