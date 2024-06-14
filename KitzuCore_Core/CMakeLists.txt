@@ -38,6 +38,7 @@ add_library(${PROJECT_NAME}
         Source/ECS/Systems/RenderBatcher.h
 )
 
+add_compile_definitions("DEBUG=$<CONFIG:Debug>")
 target_include_directories(${PROJECT_NAME} PUBLIC Source)
 target_include_directories(${PROJECT_NAME} PUBLIC ${spdlog_SOURCE_DIR}/include)
 target_link_libraries(${PROJECT_NAME} PUBLIC SDL3::SDL3-static flecs_static spdlog)

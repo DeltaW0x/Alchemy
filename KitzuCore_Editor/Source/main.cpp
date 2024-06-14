@@ -2,11 +2,8 @@
 // Created by lucac on 28/05/2024.
 //
 
-#ifdef _DEBUG
 static const bool g_bDebug = true;
-#else
-static const bool g_bDebug = false;
-#endif
+
 
 #include "EditorApp.h"
 int main() {
@@ -19,7 +16,7 @@ int main() {
     info.windowWidth = 1280;
     info.windowHeight = 720;
     info.windowFlags = SDL_WINDOW_RESIZABLE;
-
+    info.msaaSamples = SDL_GPU_SAMPLECOUNT_4;
     EditorApp editorApp(info,g_bDebug);
     editorApp.Run();
 

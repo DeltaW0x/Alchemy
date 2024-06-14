@@ -7,7 +7,26 @@
 #include "ECS/Components/InputComponent.h"
 #include "ECS/Systems/InputSystem.h"
 
+static void SDL_LoggerBridge(void *userdata, int category, SDL_LogPriority priority, const char *message) {
+    switch(priority) {
+        case SDL_LOG_PRIORITY_INFO:
+            LOG_INFO(message);
+        break;
+        case SDL_LOG_PRIORITY_WARN:
+            LOG_WARN(message);
+        break;
+        case SDL_LOG_PRIORITY_ERROR:
+            LOG_ERROR(message);
+        break;
+        case SDL_LOG_PRIORITY_CRITICAL:
+            LOG_CRITICAL(message);
+        break;
+        default:
+            break;
+    }
+}
 Application::Application(FrameworkInitInfo &initInfo, bool debugMode) {
+    SDL_SetLogOutputFunction(&SDL_LoggerBridge,NULL);
     if (debugMode) {
         initInfo.windowTitle.append(" [DEBUG]");
     }
@@ -28,7 +47,7 @@ Application::Application(FrameworkInitInfo &initInfo, bool debugMode) {
     bool res = SDL_GpuClaimWindow(m_pGpuDevice, m_pMainWindow, initInfo.swapchainComposition, initInfo.presentMode);
     ASSERT(res==SDL_TRUE, "Failed to claim main window");
 
-    m_pRenderer = new Renderer(m_pGpuDevice,m_pMainWindow);
+    m_pRenderer = new Renderer(m_pGpuDevice,m_pMainWindow,initInfo.msaaSamples);
 
     SetupSingletons();
     SetupSystems();

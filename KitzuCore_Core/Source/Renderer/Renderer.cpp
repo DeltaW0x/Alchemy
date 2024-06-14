@@ -6,7 +6,7 @@
 #include "Logging.h"
 
 
-Renderer::Renderer(SDL_GpuDevice *device, SDL_Window *window)  :m_pGpuDevice(device),m_pMainWindow(window){
+Renderer::Renderer(SDL_GpuDevice *device, SDL_Window *window,SDL_GpuSampleCount msaa)  :m_pGpuDevice(device),m_pMainWindow(window){
 
     m_renderTargetInfo.isCube = false;
     m_renderTargetInfo.width = 19;

@@ -10,7 +10,7 @@
 #include <vector>
 class Renderer {
 public:
-    Renderer(SDL_GpuDevice* device,  SDL_Window* window);
+    Renderer(SDL_GpuDevice* device,  SDL_Window* window,SDL_GpuSampleCount msaa);
 
     void Dispose();
 

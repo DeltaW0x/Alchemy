@@ -13,10 +13,12 @@ struct FrameworkInitInfo {
     SDL_GpuBackend gpuBackend;
     SDL_GpuSwapchainComposition swapchainComposition;
     SDL_GpuPresentMode presentMode;
-
+    SDL_GpuSampleCount msaaSamples;
     std::string windowTitle;
     uint32_t windowWidth,windowHeight,windowFlags;
 };
+
+
 
 class Application {
 
