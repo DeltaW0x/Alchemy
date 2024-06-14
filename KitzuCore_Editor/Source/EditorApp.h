@@ -10,6 +10,7 @@
 class EditorApp : public Application {
 public:
     EditorApp(FrameworkInitInfo &info, bool debug) : Application(info, debug) {
+
     }
 };
 

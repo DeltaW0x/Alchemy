@@ -19,12 +19,12 @@ Application::Application(FrameworkInitInfo &initInfo, bool debugMode) {
     m_pGpuDevice = SDL_GpuCreateDevice(initInfo.gpuBackend, debugMode);
     ASSERT(m_pGpuDevice != NULL, "Failed to create Gpu Device");
 
-    LOG_INFO("Creating main window")
+    LOG_INFO("Creating main window");
     m_pMainWindow = SDL_CreateWindow(initInfo.windowTitle.c_str(), initInfo.windowWidth, initInfo.windowHeight,
                                   initInfo.windowFlags);
     ASSERT(m_pMainWindow != NULL, "Failed to create main window: ", SDL_GetError());
 
-    LOG_INFO("Claiming main window")
+    LOG_INFO("Claiming main window");
     bool res = SDL_GpuClaimWindow(m_pGpuDevice, m_pMainWindow, initInfo.swapchainComposition, initInfo.presentMode);
     ASSERT(res==SDL_TRUE, "Failed to claim main window");
 
